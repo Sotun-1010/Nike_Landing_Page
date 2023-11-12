@@ -40,11 +40,11 @@ const Nav = () => {
             <span>/</span>
             <a href='/'>Explore now</a>
           </div>
-        <div className='hidden max-lg:block z-50' onClick={showMobileNav}>
-          <img src={hamburger} alt='hamburger icon' width={25} height={25} />
+        <div className='hidden max-lg:block z-50'>
+          <img src={hamburger} onClick={showMobileNav} alt='hamburger icon' width={25} height={25} />
         </div>              
       </nav>
-      <div ref={navRef} className="absolute top-0 right-0 w-full z-20">
+      <div ref={navRef} className="hidden absolute top-0 right-0 w-full z-20">
           <MobileNav />
       </div>
     </header>

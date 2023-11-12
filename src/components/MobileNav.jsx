@@ -2,7 +2,7 @@ import { navLinks } from "../constants"
 
 const MobileNav = () => {
   return (
-    <ul className="lg:hidden z-40 flex-col flex items-center justify-center py-20 w-full absolute right-0 bg-primary bg-hero bg-cover bg-center">
+    <ul className="hidden z-40 flex-col max-lg:flex items-center justify-center py-20 w-full absolute right-0 bg-primary bg-hero bg-cover bg-center">
         
         {navLinks.map((item) => (
             <li key={item.label} className="mb-6">
